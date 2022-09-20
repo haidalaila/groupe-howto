@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet regis</title>
+    <style>
+        #zaa{
+            display: flex;
+            justify-content: space-between;
+            margin: 0px;
+           padding-bottom: 50px;
+        }
+        #zaa2{
+            justify-content: center;
+        }
+        #zaa2 ul{
+            padding: 0;
+        }
+        #zaa2 li{
+            display: inline-block;
+            text-transform: unset;
+            padding: 9px 14px;
+        font-weight: bolder;
+        transition: all 0.1s ease-in-out;
+        }
+        #zaa2 li+li{
+            margin-left: 12px;
+        }
+        #zaa2 li:hover  {
+    color: rgb(148, 16, 16);
+    padding: 0 10px ;
+    border-bottom: 2px solid rgb(179, 8, 8);
+}
+        #zaa1{
+            display: flex;
+           flex-direction: column;
+            margin: 0px;
+            padding: 0px;
+        }
+        #zaa1a p{
+            font-weight: bolder;
+            margin: 0px;
+            padding: 0px;
+        }
+        #zoo{
+            display: flex;
+            justify-content: space-between;
+        }
+        #zoo1a p{
+            font-size: large;
+            padding-bottom: 12px;
+        }
+        #zoo1b h2{
+            color: red;
+        }
+        #zoo1 h2 h3{
+            padding-bottom: 0px;
+            margin: 0px;
+        }
+
+        .icons {
+            display: flex ;
+            align-items: center;
+        }
+
+        .icons .icon {
+            position: relative;
+            width: 24px;
+            height: 24px;
+        }
+
+        .icons > .icon > .indice {
+            position: absolute;
+            top:-36px;
+            right: -30px;
+            width: 20px;
+            height: 20px;
+            background-color: #d42020;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: 600;
+            color: azure;
+        }
+
+        .icons .icon + .icon {
+            margin-left: 24px ;
+        }
+
+        .icons .icon:first-child svg {
+            width: 30px;
+        }
+        button{
+            background-color: rgb(199, 45, 45);
+            color: white;
+            width: 250px;
+            height: 30px;
+            font-weight: 5000;
+            border: none;
+            border-radius: 5px ;
+        }
+        button:hover{
+            color: rgb(148, 16, 16);
+            padding: 0 10px ;
+            border-bottom: 2px solid rgb(179, 8, 8);
+            transition: all 0.1s ease-in-out;
+            
+        }
+        #buffet{
+            display: block;
+            justify-content: center;
+        }
+        #buffet3{
+            display: flex;
+            justify-content: space-between;
+        }
+        .element{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border: rgb(243, 142, 142) 1px solid;
+            width: 21%;
+            position: relative;
+            padding: 16px;
+            margin-top: 24px;
+        }
+
+        .element img {
+            transform: scale(1) translateY(0);
+            transition: all .2s ease-in-out;
+        }
+
+        .element:hover img {
+            transform: scale(1.5) translateY(-5px);
+        }
+        .element .deco {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+        }
+        .element:hover .deco {
+            bottom: -7px;
+            padding: 0;
+            border-bottom: 6px solid rgb(179, 8, 8);
+            transition: all .1s ease-in-out;
+        }
+        .element p{
+            font-size: larger;
+        }
+        .prix{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .prix button{
+            width: 90px;
+            margin-left: 60px;
+        }
+        .element1{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 320px;
+            position: relative;
+        }
+        .element1 img{
+            transform: scale(1) translateY(0);
+            transition: all .2s ease-in-out;
+        }
+        .element1:hover img {
+            transform: scale(1.5) translateY(-5px);
+        }
+        .element1:hover{
+            color: white(100, 71, 71);
+            padding: 0 10px ;
+            border-bottom: 6px solid rgb(179, 8, 8);
+            transition: all .1s ease-in-out; 
+        }
+        .element1 p{
+            font-size: larger;
+        }
+        .prix p{
+            color: red;
+            font-weight: bolder;
+        }
+        #bas{
+            display: flex;
+            justify-content: space-between;
+            width: 900px;
+            padding-top: 30px;
+        }
+        #bas1{
+            display: flex;
+            flex-direction: column;
+            margin-top: 12px;
+            padding-bottom: 40px;
+        }
+        footer{
+
+            background-color: rgb(245, 201, 201);
+        }
+        #fin{
+            align-items: center;
+            margin: 100px;
+            padding: 0;
+            margin-bottom: 0px;
+            margin-top: 12px;
+            padding-bottom: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #bas2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #bas2 div{
+            display: flex;
+            align-items: center;
+            margin-left: 12px;
+        }
+
+        #bas2 .icon {
+            width: 36px;
+            height: 36px;
+            background-color: #d42020;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        #bas2 .icon + .icon {
+            margin-left: 12px;
+        }
+
+        #bas2 .icon svg{
+            width: 18px;
+            height: 18px;
+            color: white;
+        }
+
+        input{
+            width: 230px;
+            height: 30px;
+        }
+        .générale{
+            width: 992px;
+            margin: 0 auto;
+        }
+        .fleche{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-bottom: 3px solid;
+            border-right: 3px solid;
+            transform: rotateZ(-45deg);
+            margin-left: 12px;
+        }
+        #boutton{
+            display: flex;
+            justify-content: center;
+        }
+        .boutton1 button{
+            width: 120px;
+            border-radius: 20px;
+            background-color: rgb(34, 32, 32);
+        }
+        .boutton2 button{
+            width: 70px;
+            border-radius: 20px;
+            background-color: rgb(34, 32, 32);
+        }
+
+        .boutton2  {
+            margin-left: 30px;
+        }
+        .boutton1  {
+            margin-left: 30px;
+        }
+        #barre input{
+            width: 300px;
+            border-color: red;
+           padding-right: 60px;
+        }
+        .titre{
+            display: flex;
+            align-items: center;
+            height: 300px;
+            color: white;
+        }
+        .grand_titre{
+            background-color: black;
+        }
+        #recherche0{
+            display: flex;
+            justify-content: center;
+        }
+        #recherche1{
+            display: flex;
+            justify-content: center;
+        }
+        #recherche{
+            margin-top: 30px;
+            margin-bottom: 60px;
+            padding: 80px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(245, 201, 201);
+            width: 390px;
+        }
+        #recherche button{
+            width: 90px;
+            border-radius: 6px;
+            margin-top: 40px;
+            margin-left: 145px;
+        }
+        #recherche input{
+            margin-top: 12px;
+            margin-bottom: 10px;
+            width: 400px;
+            background-color:rgb(245, 201, 201) ;
+            border: 1px solid;
+        }
+        @media only screen and (max-width: 768px) {
+            #zaa{
+           display: flex;
+            margin: 0px;
+           padding-bottom: 50px;
+        }
+        ul{
+            display: none;
+        }
+        #zii{
+            display: block;
+            flex-direction: column;
+        }
+        #menu{
+           display: ;
+        }
+        .repas{
+            margin-top: 12px;
+        }
+        #texte{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin-left: none;
+            padding-left: none;
+            text-align:start;
+        }
+        #mode{
+            display: block;
+            flex-direction: column;
+        }
+        #fin{
+           display: flex ;
+           flex-direction: column;
+           margin-left: none;
+        }
+        
+        #bas{
+           display: flex ;
+           flex-direction: column;
+        }
+        hr{
+            display: none;
+        }
+        #bas2{
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        }
+       
+    </style>
+</head>
+<body>
+ <div class="générale">
+   <header>
+    <div id="zaa">
+        <div id="zaa1">
+            <div>
+                <img src="images/res-logo.png" alt="icone" width="50px">
+            </div>
+            <div id="zaa1a">
+                <p>Eat & Drink</p>
+            </div>
+        </div>
+        <div id="zaa2">
+            <ul>
+                <li>Acceuil</li>
+                <li>Repas</li>
+                <li>Panier</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="icons">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill = 'currentcolor' d="M171.7 191.1H404.3L322.7 35.07C316.6 23.31 321.2 8.821 332.9 2.706C344.7-3.409 359.2 1.167 365.3 12.93L458.4 191.1H544C561.7 191.1 576 206.3 576 223.1C576 241.7 561.7 255.1 544 255.1L492.1 463.5C484.1 492 459.4 512 430 512H145.1C116.6 512 91 492 83.88 463.5L32 255.1C14.33 255.1 0 241.7 0 223.1C0 206.3 14.33 191.1 32 191.1H117.6L210.7 12.93C216.8 1.167 231.3-3.409 243.1 2.706C254.8 8.821 259.4 23.31 253.3 35.07L171.7 191.1zM191.1 303.1C191.1 295.1 184.8 287.1 175.1 287.1C167.2 287.1 159.1 295.1 159.1 303.1V399.1C159.1 408.8 167.2 415.1 175.1 415.1C184.8 415.1 191.1 408.8 191.1 399.1V303.1zM271.1 303.1V399.1C271.1 408.8 279.2 415.1 287.1 415.1C296.8 415.1 304 408.8 304 399.1V303.1C304 295.1 296.8 287.1 287.1 287.1C279.2 287.1 271.1 295.1 271.1 303.1zM416 303.1C416 295.1 408.8 287.1 400 287.1C391.2 287.1 384 295.1 384 303.1V399.1C384 408.8 391.2 415.1 400 415.1C408.8 415.1 416 408.8 416 399.1V303.1z"/></svg>
+                <div class="indice">
+                    2
+                </div>
+            </div>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/></svg>
+                
+            </div>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+                
+            </div>
+        </div>
+    </div>
+   </header>
+ </div>
+   <div class="grand_titre">
+       <div class="générale">
+        <div class="titre">
+            <h1>Repas</h1>
+        </div>
+       </div>
+   </div>
+
+<div class="générale">
+   <div id="recherche0">
+    <div id="recherche1">
+        <div id="recherche">
+            <div>
+             E-mail <br>
+             <label for="email"></label>
+                 <input type="email" id="email"  name="email">
+             Mot de Passe <br>
+             <label for="password"></label>
+             <input type="password" name="pass"><br>
+            </div> <br> <br> <br>
+            <div>
+             <button>Connexion</button>
+            </div>
+         </div>
+    </div>
+   </div>
+   </div>
+    
+    <br>
+    <footer>
+       <div id="fin">
+        <div id="bas">
+            <div id="bas1">
+             <div>
+                 <img src="images/res-logo.png" alt="icone" width="50px">
+             </div>
+             <div id="zaa1a">
+                 <p>Eat & Drink</p><br>
+                 <p >Jamis trop de frites, une péoite de
+                  <br>poulet est ce qu'il vous faut, savourez 
+                  <br>la saveur c'est le jour de la triche, n'aie 
+                  <br>pas peur.</p>
+             </div>
+            </div>
+             <div>
+                 <h4>Heure de livraison</h4>
+                 <h4>Dimanche- Lundi</h4>
+                 <p>10:00 23:00</p>
+                 <h4>Vendredi- Samedi</h4>
+                 <p>Fermé</p>
+             </div>
+             <div>
+                 <h4>Contact</h4>
+                 <h5>Youndé CMR Ngoa-Ekélle</h5>
+                 <h5>Phone: +237 694 00 00 00</h5>
+                 <h5>Email: eatdrink@email.com</h5>
+             </div>
+             <div>
+                 <h4>Newsletter</h4>
+                 <p>Abonnez-vous à notre newsletter</p>
+                 <label for="email"></label>
+                 <input type="email" id="email" placeholder="votre email" name="email" required>
+             </div>
+         </div>
+         <hr width="90%">
+         <div id="bas2">
+             <span>Nous suivre</span>
+            <div>
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill = 'currentcolor' d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></div>
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill = 'currentcolor' d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg></div>
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill = 'currentcolor' d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></div>
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill = 'currentcolor' d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></div>
+            </div>
+         </div>
+       </div>
+    </footer>
+   </div>
+
+ </div>
+</body>
+</html>

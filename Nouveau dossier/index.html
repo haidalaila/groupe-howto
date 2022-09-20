@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        .container * {
+            margin: 0 ;
+            padding: 0;
+        }
+
+        header {
+            height: 100px;
+            width: 100%;
+            align-items: center;
+            background-color: rgb(25, 213, 238);
+        }
+
+        main {
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-weight: 900;
+        }
+
+        .container .item {
+            border: 1px solid silver;
+            border-radius: 10px;
+            width: 600px;
+            overflow: hidden;
+            margin-bottom: 16px;
+        }
+
+        .container .item + .item {
+            margin-top: 16px;
+            margin-bottom: 12px;
+        }
+
+        .item li {
+            list-style: none;
+        }
+
+        .item .nom {
+            padding: 16px;
+            background-color: rgb(12, 111, 136);
+            color: white;
+        }
+        .item .titre {
+            background-color: rgb(4, 51, 63);
+            padding: 5px 16px;
+            color: white;
+        }
+        .item .tp {
+            padding: 16px;
+
+        }
+        .item li {
+            padding: 16px;
+            display: block;
+            padding: 10px 0;
+            font-size: 18px;
+            font-weight: 700;
+            color: #444
+        }
+        .item li + li{
+            border-top: 1px solid silver ;
+            
+        }
+
+        .groupe {
+            height: 200px;
+            width: 100%;
+            border: 1px solid silver;
+            border-radius: 10px;
+            overflow: hidden;
+
+        }
+
+        .groupe .img {
+            height: 80%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            position: relative;
+        }
+
+        .lea {
+            background-color: #ff0055;
+            color: white;
+        }
+
+        .groupe .title {
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            height: 20%;
+        }
+        .template {
+            background-image: url(./photo-6.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .template:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="d-flex">
+        <div class="container">
+            <h1>Groupe How to</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container mb-3 mt-4">
+            <h2>
+                Les membres du groupe
+            </h2>
+        </div>
+        <div class="container">
+            <div class="item mb-3">
+                <div class="nom">
+                    <h3>Claire Mafogang</h3>
+                </div>
+                <div>
+                    <div class="titre">
+                        <h4>Travaux personnels</h4>
+                    </div>
+                    <div class="tp">
+                        <li>
+                            Eat and drink 
+                        </li>
+                        <li>
+                            le site du Zozor 
+                        </li>
+                        <li>La page de Casty</li>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="nom">
+                    <h3>Laila MANDU</h3>
+                </div>
+                <div>
+                    <div class="titre">
+                        <h4>Travaux personnels</h4>
+                    </div>
+                    <div class="tp">
+                        <li>
+                            Eat and drink - Projet M. Regis
+                        </li>
+                        <li>
+                            le site Khaira - Copié sur l'exemple du site du Zozor
+                        </li>
+                        <li>La page de Casty</li>
+                        <li>todo liste - Javascript</li>
+                        <li>Site de Dr. DOMGA - Site pour enregistrement des Etudiants (<a target="_blank" href = 'https://junior-boop.github.io/LailaMandu'>voici le lien</a>)</li>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="nom">
+                    <h3>Roméo SAAG</h3>
+                </div>
+                <div>
+                    <div class="titre">
+                        <h4>Travaux personnels</h4>
+                    </div>
+                    <div class="tp">
+                        <li>Tous les travaux de Roméo se trouvent sur Github ( <a target="_blank" href="https://github.com/MrAgent0047">voici le lien</a> )</li>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="nom">
+                    <h3>Léa Pierrette Ayangma</h3>
+                </div>
+                <div>
+                    <div class="titre">
+                        <h4>Travaux personnels</h4>
+                    </div>
+                    <div class="tp">
+                        <li>Eat and drink - Projet M. Regis (<a target="_blank" href="./projetregis/index.html">Voici le lien</a>)</li>
+                        <li>Maquette Dr. DOMGA (<a target="_blank" href="./projetregis/index.html">Voici le lien</a>)</li>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="nom">
+                    <h3>Daniel SEPPO EKE</h3>
+                </div>
+                <div>
+                    <div class="titre">
+                        <h4>Travaux personnels</h4>
+                    </div>
+                    <div class="tp">
+                        <li>Tous les travaux de Daniel se trouvent sur Github ( <a target="_blank" href="https://github.com/junior-boop">voici le lien</a> )</li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container mt-4 mb-4">
+            <div>
+                <h2>
+                    Travaux effectués en groupe
+                </h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 px-3">
+                    <div class="groupe">
+                        <div class="img lea">
+                            <span>
+                                Lea Food
+                            </span>
+                        </div>
+                        <div class="title">
+                            <span><a href="https://leafood.netlify.app">leafood.netlify.app</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 px-3">
+                    <div class="groupe">
+                        <div class="img">
+                            <svg width="100px" viewBox="0 0 221 78" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Howto.">
+                                  <path d="M3.648 61.4L18.752 61.4L18.752 44.888L32.704 44.888L32.704 61.4L47.808 61.4L47.808 16.6L32.704 16.6L32.704 32.472L18.752 32.472L18.752 16.6L3.648 16.6L3.648 61.4ZM151.808 58.552Q155.84 62.04 163.072 62.04Q165.632 62.04 167.968 61.592Q170.304 61.144 171.968 60.184L168.512 50.136Q167.104 51.096 165.248 51.096Q163.968 51.096 163.104 50.2Q162.24 49.304 162.24 47.704L162.24 38.872L169.408 38.872L169.408 28.312L162.24 28.312L162.24 18.52L147.776 18.52L147.776 26.392L135.488 26.392L129.207 45.1097L123.136 26.392L110.848 26.392L104.558 44.8865L98.56 26.392L84.864 26.392L97.024 61.4L111.104 61.4L116.627 45.199L121.92 61.4L136 61.4L143.825 38.872L147.776 38.872L147.776 47.832Q147.776 55.064 151.808 58.552ZM57.824 59.704Q62.4 62.04 68.352 62.04Q74.304 62.04 78.912 59.704Q83.52 57.368 86.112 53.272Q88.704 49.176 88.704 43.864Q88.704 38.552 86.112 34.456Q83.52 30.36 78.912 28.056Q74.304 25.752 68.352 25.752Q62.4 25.752 57.824 28.056Q53.248 30.36 50.624 34.456Q48 38.552 48 43.864Q48 49.176 50.624 53.272Q53.248 57.368 57.824 59.704ZM189.312 62.04Q183.36 62.04 178.784 59.704Q174.208 57.368 171.584 53.272Q168.96 49.176 168.96 43.864Q168.96 38.552 171.584 34.456Q174.208 30.36 178.784 28.056Q183.36 25.752 189.312 25.752Q195.264 25.752 199.872 28.056Q204.48 30.36 207.072 34.456Q209.664 38.552 209.664 43.864Q209.664 46.4228 209.063 48.6994Q209.445 48.2056 209.92 47.768Q212.352 45.528 215.936 45.528Q219.52 45.528 221.952 47.768Q224.384 50.008 224.384 53.72Q224.384 57.368 221.952 59.704Q219.52 62.04 215.936 62.04Q212.352 62.04 209.92 59.704Q207.488 57.368 207.488 53.72Q207.488 53.0553 207.566 52.438Q207.332 52.861 207.072 53.272Q204.48 57.368 199.872 59.704Q195.264 62.04 189.312 62.04ZM147.776 28.312L147.776 27.4975L147.493 28.312L147.776 28.312ZM71.232 50.008Q69.952 50.776 68.352 50.776Q66.752 50.776 65.472 50.008Q64.192 49.24 63.424 47.672Q62.656 46.104 62.656 43.864Q62.656 41.56 63.424 40.056Q64.192 38.552 65.472 37.784Q66.752 37.016 68.352 37.016Q69.952 37.016 71.232 37.784Q72.512 38.552 73.28 40.056Q74.048 41.56 74.048 43.864Q74.048 46.104 73.28 47.672Q72.512 49.24 71.232 50.008ZM189.312 50.776Q190.912 50.776 192.192 50.008Q193.472 49.24 194.24 47.672Q195.008 46.104 195.008 43.864Q195.008 41.56 194.24 40.056Q193.472 38.552 192.192 37.784Q190.912 37.016 189.312 37.016Q187.712 37.016 186.432 37.784Q185.152 38.552 184.384 40.056Q183.616 41.56 183.616 43.864Q183.616 46.104 184.384 47.672Q185.152 49.24 186.432 50.008Q187.712 50.776 189.312 50.776Z" />
+                                </g>
+                              </svg>
+                        </div>
+                        <div class="title">
+                            <span>Lien Pas disponible</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 px-3">
+                    <div class="groupe">
+                        <div class="img template">
+                            <span>
+                                Template-3d
+                            </span>
+                        </div>
+                        <div class="title">
+                            <span><a href="https://template-3d.netlify.app/index.html">template-3d.netlify.app</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
